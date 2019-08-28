@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <meta name="theme-color" content="#ffffff">	
+    	<link href="index.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+<h2> Universal Image Classifier</h2>
+<br>
+<p>Choose an image and i will guess whats on it...cool not?</p>
+<br>
+    <input type="file"  onchange="previewFile()" accept=".png, .jpg, .jpeg"><br>
+    <br>
+    <img id="img" src="" height="200" alt="Image preview...">
+    
+    <br>
+    <div id="res"></div>
+
+    
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+    
+  </body>
+</html>
